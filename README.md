@@ -63,6 +63,17 @@ Note: Some options override the global configuration
 * **channel** Overrides the default Slack channel messages will be posted to
 
 
+ ## security advisory after snyk test
+ * **Issues with no direct upgrade or patch** 
+ * (ReDoS) [Medium Severity][https://security.snyk.io/vuln/SNYK-JS-RAMDA-1582370] in ramda@0.21.0
+    introduced by google-play-scraper@9.1.1 > ramda@0.21.0
+  This issue was fixed in versions: 0.27.2
+  
+   * (SSRF) [Medium Severity][https://security.snyk.io/vuln/SNYK-JS-REQUEST-3361831] in request@2.88.2      
+    introduced by request@2.88.2
+  No upgrade or patch available
+
+
 ## Google Play Publisher Key
 ReviewMe requires access to the Google Play Publisher API to fetch reviews. You need to supply ReviewMe with a Google Play Publisher API private key:
 
@@ -72,7 +83,7 @@ ReviewMe requires access to the Google Play Publisher API to fetch reviews. You 
 * Download the private key (`.json`)
 * Supply the path to the private key in the `config.json`
 
- 
+
 
 
 
